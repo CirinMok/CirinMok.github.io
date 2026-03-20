@@ -1,11 +1,343 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>我的第一个GitHub Pages网站</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yijun Mo | Academic Portfolio</title>
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #444;
+      --line: #1a1a1a;
+      --paper: #fff;
+      --maxw: 860px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+        "Times New Roman", Times, serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.55;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 56px 18px 72px;
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .name {
+      margin: 0 0 8px;
+      font-size: clamp(34px, 4vw, 46px);
+      letter-spacing: 0.3px;
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15.5px;
+      max-width: 62ch;
+    }
+
+    .meta {
+      text-align: right;
+      font-size: 14px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .meta a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(17, 17, 17, 0.25);
+      padding-bottom: 1px;
+    }
+
+    .meta a:hover {
+      border-bottom-color: rgba(17, 17, 17, 0.9);
+    }
+
+    nav {
+      margin-top: 26px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(0, 0, 0, 0.18);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+      align-items: baseline;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+      padding-bottom: 2px;
+    }
+    nav a:hover { color: var(--ink); border-bottom-color: rgba(0,0,0,0.75); }
+
+    section {
+      margin-top: 30px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .subhead {
+      margin: 0 0 6px;
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin-top: 2px;
+    }
+
+    .row .right {
+      margin-left: auto;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    li { margin: 7px 0; }
+
+    .small {
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    dl {
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    dt {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: var(--ink);
+    }
+
+    dd {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      .top { grid-template-columns: 1fr; }
+      .meta { text-align: left; white-space: normal; }
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-<h1>恭喜！网站部署成功啦！</h1>
-<p>用GitHub Pages搭网站真的超简单～</p>
+  <a href="#content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+    跳到内容
+  </a>
+
+  <main class="wrap" id="content">
+    <header class="top">
+      <div>
+        <h1 class="name">Yijun Mo</h1>
+        <p class="tagline">
+          Undergraduate researcher--engineer in data engineering &amp; operations research; builds scalable
+          learning pipelines and optimization models for high-throughput scientific and economic systems.
+          Interests: data pipeline design, large-scale feature engineering, optimization under structural
+          constraints, reproducible computational modeling.
+        </p>
+        <nav aria-label="Sections">
+          <a href="#education">Education</a>
+          <a href="#skills">Technical Skills</a>
+          <a href="#publications">Publications</a>
+          <a href="#awards">Awards</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+        </nav>
+      </div>
+
+      <div class="meta">
+        <div>
+          <a href="mailto:Myj_ie@outlook.com">Myj_ie@outlook.com</a>
+        </div>
+        <div>
+          <a href="tel:+8618177273657">+86 181-7727-3657</a>
+        </div>
+        <div style="margin-top:10px;">
+          <a href="https://github.com/CirinMok" target="_blank" rel="noopener noreferrer">github.com/CirinMok</a>
+        </div>
+        <div>
+          <a href="https://cirinmok.github.io/" target="_blank" rel="noopener noreferrer">cirinmok.github.io</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="subhead">South China University of Technology, School of Business Administration</div>
+      <div class="row">
+        <div>BSc, Industrial Engineering</div>
+        <div class="right">Sep 2023 -- Present | Expected Jun 2027</div>
+      </div>
+      <ul>
+        <li>GPA: 3.44/4.00; Major Rank: 5/12; Core-course weighted average: 83.97/100.</li>
+        <li>English Proficiency: IELTS Overall 6.5 (L 6.0, R 8.0, W 5.5, S 5.5).</li>
+        <li>Core coursework (IE): Operations Research, Database Theory &amp; Application, Managerial Statistics.</li>
+        <li>Core coursework (CS Minor): Data Structures, Discrete Mathematics, Data Warehouse &amp; Data Mining.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="two-col">
+        <dl>
+          <dt>Languages</dt>
+          <dd>Python, SQL, C++.</dd>
+          <dt style="margin-top:10px;">Libraries</dt>
+          <dd>pandas, scikit-learn, XGBoost, OR-Tools, joblib.</dd>
+        </dl>
+        <dl>
+          <dt>Tools</dt>
+          <dd>Git, Docker, MySQL, Linux Performance Commands, SSH/SCP.</dd>
+          <dt style="margin-top:10px;">Links</dt>
+          <dd>
+            <a href="https://github.com/CirinMok" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">GitHub</a>
+            &nbsp;·&nbsp;
+            <a href="https://cirinmok.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">Personal Website</a>
+          </dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications &amp; Preprints</h2>
+      <ul>
+        <li>
+          Duan, H.<sup>*</sup>, Mo, Y.<sup>*</sup>, &amp; Xia, L. C. (2026).
+          <em>RAEP: A Rapid and Accurate Enzyme Predictor for High-Throughput Mining of Enzymatic Sequences</em>.
+          Under review at <em>Bioinformatics</em> (5-yr IF: 7.1; JCR Q1; CAS Tier 3) (<sup>*</sup> equal contribution).
+        </li>
+        <li>
+          Guo, J., Mo, Y., &amp; Xiao, H. (2026).
+          <em>Integrated Logistics Framework for Moon Colony Space Elevator: Hybrid Transportation Strategy Optimization</em>.
+          Manuscript in preparation.
+        </li>
+      </ul>
+      <p class="small">* The symbols <sup>*</sup> indicate equal contribution.</p>
+    </section>
+
+    <section id="awards">
+      <h2>Selected Awards &amp; Honours</h2>
+      <ul>
+        <li>Asia-Pacific Mathematical Contest in Modeling: Second Prize (2025).</li>
+        <li>ESport Future Competition: Third Prize (Team Member, 2024).</li>
+        <li>School of Business Administration: Academic Scholarship (2025).</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+
+      <div style="margin-top: 10px;">
+        <div class="subhead">
+          RAEP Library — Rapid Enzyme/Non-Enzyme Prediction Toolkit
+        </div>
+        <div class="row">
+          <div class="small">Core Developer</div>
+          <div class="right small">2025 -- Present</div>
+        </div>
+        <ul>
+          <li>Built a supervised learning pipeline (scikit-learn/XGBoost) for high-throughput enzymatic sequence classification,
+            achieving 99.49% accuracy on benchmark (new-392 test set); fastest inference speed among comparable tools.</li>
+          <li>Engineered feature extraction modules (joblib/pandas) to support training on 500k+ protein sequences;
+            reduced per-sequence inference time to &lt;50ms via vectorization + joblib parallelization.</li>
+          <li>Status: v1.0.0 released on
+            <a href="https://github.com/labxscut/RAEP" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">GitHub</a>
+            &amp;
+            <a href="https://pypi.org/project/raep/" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">PyPI</a>;
+            manuscript under review at <em>Bioinformatics</em> (co-first author).</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 26px;">
+        <div class="subhead">
+          2026 MCM/ICM — Hybrid Logistics Framework for Moon Colony Space Elevator
+        </div>
+        <div class="row">
+          <div class="small">Team member</div>
+          <div class="right small">Feb 2026</div>
+        </div>
+        <ul>
+          <li>Formulated a multi-objective optimization model to compare pure rocket, pure elevator, and hybrid transport strategies for lunar infrastructure delivery.</li>
+          <li>Applied Queuing Theory to quantify system stability: modeled rocket fleet with server vacations and elevator with redundancy; Monte Carlo simulation showed significantly lower variance for hybrid strategy.</li>
+          <li>Integrated Inventory Theory (EOQ + Safety Stock) for water resource planning: calculated risk-adjusted safety stock based on supply chain stability analysis, reducing holding costs compared to pure rocket strategy.</li>
+          <li>Deliver a 32-page technical report with coupled differential equations and stochastic simulations; Final Result Pending.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 26px;">
+        <div class="subhead">
+          Asia-Pacific Mathematical Contest in Modeling — Multi-model Framework for U.S. Tariff Policy Impact Analysis
+        </div>
+        <div class="row">
+          <div class="small">Team Lead</div>
+          <div class="right small">Nov 2025</div>
+        </div>
+        <ul>
+          <li>Designed an integrated modeling framework combining Grey Relational Analysis, Armington Substitution Model, and Multi-Objective Optimization to quantify trade diversion, supply chain relocation, and fiscal revenue dynamics under tariff shocks.</li>
+          <li>Formulated a cost-minimization LP model (Python/OR-Tools) to identify the &ldquo;Break-even Tariff Rate&rdquo; for automotive near-shoring; revealed a non-linear &ldquo;Capacity Wall&rdquo; in semiconductor reshoring.</li>
+          <li>Developed a counterfactual forecasting pipeline (Holt-Winters + dynamic decay factor) to expose the &ldquo;Revenue Illusion&rdquo; phenomenon; validated policy trade-offs via Entropy-Weighted TOPSIS (J-curve effect).</li>
+          <li>Led a 3-member team to deliver a 31-page technical report with 5 interconnected models; ranked top 8% (Second Prize, 2025).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="subhead">China Tower Corporation, Guangxi Branch</div>
+      <div class="row">
+        <div>Data Analyst Intern (New Energy Services)</div>
+        <div class="right">Jan 2026 -- Feb 2026</div>
+      </div>
+      <ul>
+        <li>Analyzed multi-dimensional revenue data across charging, battery swapping, and backup power services for both B2C and B2B segments in the new energy business; built time-series forecasts for regional KPI allocation.</li>
+        <li>Provide reporting with Python/SQL.</li>
+      </ul>
+    </section>
+
+    
+  </main>
 </body>
 </html>
