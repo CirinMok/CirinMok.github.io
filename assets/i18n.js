@@ -21,8 +21,8 @@ const translations = {
     "zh": "关于我"
   },
   "text6": {
-    "en": "Contact ↗",
-    "zh": "联系我 ↗"
+    "en": "Contact",
+    "zh": "联系我"
   },
   "text7": {
     "en": "Research · Engineering · Exploration",
@@ -41,8 +41,8 @@ const translations = {
     "zh": "我是<strong>华南理工大学</strong>工业工程专业本科生，辅修计算机。我的研究与项目经历主要涉及酶预测、科研软件工程和运筹优化，关注计算流程的可复现性与实际应用。"
   },
   "text11": {
-    "en": "Explore my work <span aria-hidden=\"true\">↘</span>",
-    "zh": "查看我的项目 <span aria-hidden=\"true\">↘</span>"
+    "en": "Explore my work",
+    "zh": "查看我的项目"
   },
   "text12": {
     "en": "Machine learning",
@@ -169,8 +169,8 @@ const translations = {
     "zh": "时间序列预测"
   },
   "text43": {
-    "en": "Code <span aria-hidden=\"true\">↗</span>",
-    "zh": "代码 <span aria-hidden=\"true\">↗</span>"
+    "en": "Code",
+    "zh": "代码"
   },
   "text44": {
     "en": "Project details",
@@ -364,21 +364,9 @@ const translations = {
     "en": "Performed data cleaning, analysis, and report generation using Python/SQL.",
     "zh": "使用 Python/SQL 完成数据清洗、分析与报表输出。"
   },
-  "text92": {
-    "en": "Get in touch",
-    "zh": "联系方式"
-  },
-  "text93": {
-    "en": "Let's connect.",
-    "zh": "期待与你交流。"
-  },
-  "text94": {
-    "en": "For research conversations and opportunities.<br><a href=\"tel:+8618177273657\">+86 181-7727-3657</a>",
-    "zh": "欢迎就研究方向与合作机会联系我。<br><a href=\"tel:+8618177273657\">+86 181-7727-3657</a>"
-  },
   "text95": {
-    "en": "Back to top ↑",
-    "zh": "返回顶部 ↑"
+    "en": "Back to top",
+    "zh": "返回顶部"
   }
 };
 const languageControls = document.querySelector('.language-switch');
@@ -392,6 +380,7 @@ function setLanguage(language, remember = false) {
   document.querySelector('meta[name="description"]').content = chosen === 'zh'
     ? '莫易君，华南理工大学工业工程本科生，辅修计算机。关注酶预测、科研软件工程、可复现研究与运筹优化。'
     : 'Yijun Mo — Industrial Engineering undergraduate at SCUT. Enzyme prediction, scientific software, and operations research.';
+  document.querySelector('#contact').setAttribute('aria-label', chosen === 'zh' ? '联系方式' : 'Contact');
   document.querySelector('nav').setAttribute('aria-label', chosen === 'zh' ? '主导航' : 'Main navigation');
   document.querySelector('.facts').setAttribute('aria-label', chosen === 'zh' ? '学业概览' : 'Academic highlights');
   document.querySelector('.portrait img').alt = chosen === 'zh' ? '莫易君的个人照片' : 'Portrait of Yijun Mo';
