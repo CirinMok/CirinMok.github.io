@@ -18,7 +18,18 @@
       html:lang(zh-CN) .project-card h3{font-size:24px;line-height:1.5}
       html:lang(zh-CN) .pub-content{line-height:1.9}
       @media(max-width:720px){nav{flex:1 1 100%;gap:14px}.language-switch{margin-left:auto}.language-switch button{padding:4px 7px;font-size:11px}html:lang(zh-CN) .hero h1{font-size:49px}html:lang(zh-CN) h2{font-size:28px}html:lang(zh-CN) .chinese-name{font-size:18px;margin-left:7px}}
-    </style><script src="assets/i18n.js" defer=""></script></head><body>
+    </style><script src="assets/i18n.js" defer=""></script><style>
+.project-note{font-size:12px;line-height:1.7;color:var(--accent);border-left:2px solid #b6c6b1;padding-left:12px;margin:0 0 18px}
+.thesis-card{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);border-style:dashed;background:#fbfcf7}
+.thesis-card .project-image{height:100%;min-height:300px;object-fit:contain;background:#e5ebe6}
+.thesis-card .card-body{min-width:0;min-height:0;padding:30px 34px}
+.thesis-card h3{font-size:25px;line-height:1.5}
+.thesis-card .card-summary{min-height:0;margin:18px 0;line-height:1.9}
+.thesis-card .card-tags{margin-bottom:0}
+.thesis-card .card-meta{align-items:center}
+.plan-label{background:#e7ecdf;padding:4px 9px;border-radius:4px;color:var(--accent)}
+@media(max-width:720px){.thesis-card{grid-template-columns:minmax(0,1fr)}.thesis-card .project-image{height:auto;min-height:0}.thesis-card .card-body{padding:24px}.thesis-card h3{font-size:23px}}
+</style></head><body>
 <a class="skip-link" href="#content" data-i18n="text1">跳到正文</a>
 <header class="site-header"><div class="container nav-bar"><a class="wordmark" href="#content" data-i18n="text2">莫易君<span>.</span></a><nav aria-label="主导航"><a href="#projects" data-i18n="text3">项目</a><a href="#publications" data-i18n="text4">论文</a><a href="#education" data-i18n="text5">关于我</a><a class="nav-contact" href="#contact" data-i18n="text6">联系我</a><div class="language-switch" role="group" aria-label="页面语言" hidden=""><button type="button" data-language="zh" lang="zh-CN" aria-pressed="true">中文</button><button type="button" data-language="en" lang="en" aria-pressed="false">EN</button></div></nav></div></header>
 <main class="container" id="content">
@@ -28,7 +39,7 @@
           <li data-i18n="text47">参与基于 scikit-learn/XGBoost 的高通量酶/非酶分类流程，并协助模型推理与结果验证；项目在 new-392 测试集上的准确率达到 99.49%。</li>
           <li data-i18n="text48">主要负责工具工程化与基准测试流程，包括 PyPI 发布、Docker 环境配置、可复现使用文档，以及不同工具的运行时间、峰值内存与分类性能评测。</li>
           <li data-i18n="text49">状态：v1.0.0 已发布于 <a href="https://github.com/labxscut/sxLaep" target="_blank" rel="noopener noreferrer">GitHub</a> 与 <a href="https://pypi.org/project/sxlaep/" target="_blank" rel="noopener noreferrer">PyPI</a>；已有 <a href="https://doi.org/10.64898/2026.05.06.723393" target="_blank" rel="noopener noreferrer">bioRxiv 预印本</a>。稿件已完成，拟投稿至 <em lang="en">IEEE/ACM Transactions on Computational Biology and Bioinformatics</em>（TCBB）。</li>
-        </ul></details></div></article><article class="project-card"><img class="project-image" src="assets/lunar-zh.svg" alt="" width="900" height="560" loading="lazy" data-image-en="assets/lunar.svg" data-image-zh="assets/lunar-zh.svg"><div class="card-body"><div class="card-meta"><span data-i18n="text25">运筹学</span><span>2026</span></div><h3 data-i18n="text29">月球运输与混合物流</h3><p class="card-summary" data-i18n="text32">通过排队论与随机物流建模，探索月球殖民地物资运输的可靠性与系统表现。</p><p class="card-role" data-i18n="text35">团队成员 · 2026 美赛 H 奖</p><div class="card-tags"><span class="tag" data-i18n="text37">排队论</span><span class="tag" data-i18n="text38">可靠性分析</span><span class="tag" data-i18n="text39">随机仿真</span></div><details><summary data-i18n="text45">项目详情</summary><ul>
+        </ul></details></div></article><article class="project-card"><img class="project-image" src="assets/lunar-zh.svg" alt="" width="900" height="560" loading="lazy" data-image-en="assets/lunar.svg" data-image-zh="assets/lunar-zh.svg"><div class="card-body"><div class="card-meta"><span data-i18n="text25">运筹学</span><span>2026</span></div><h3 data-i18n="text29">月球运输与混合物流</h3><p class="card-summary" data-i18n="text32">通过排队论与随机物流建模，探索月球殖民地物资运输的可靠性与系统表现。</p><p class="card-role" data-i18n="text35">团队成员 · 2026 美赛 H 奖</p><p class="project-note" data-i18n="mcmOutlook">相关成果预期转化为一篇 EI 论文。</p><div class="card-tags"><span class="tag" data-i18n="text37">排队论</span><span class="tag" data-i18n="text38">可靠性分析</span><span class="tag" data-i18n="text39">随机仿真</span></div><details><summary data-i18n="text45">项目详情</summary><ul>
           <li data-i18n="text50">参与月球殖民地物资运输系统的排队论与随机物流建模，讨论运力中断、运输可靠性与库存约束下的系统表现。</li>
           <li data-i18n="text51">负责相关文献调研、可靠性模块设计及模型一致性检查，并参与排队分析部分的撰写。</li>
           <li data-i18n="text52">参与完成 32 页英文技术报告，项目获 2026 年美国大学生数学建模竞赛（MCM）Honorable Mention（H 奖）。</li>
@@ -37,7 +48,15 @@
           <li data-i18n="text54">构建成本最小化线性规划模型（Python/OR-Tools），模拟产能约束条件下由关税政策影响的汽车近岸外包现象。</li>
           <li data-i18n="text55">根据美国海关贸易时间序列数据，建立中短期预测模型，模拟关税政策改变后的财政收入，揭示短期收入增高、中长期收入下降的“收入幻觉”效应。</li>
           <li data-i18n="text56">带领 3 人团队完成 31 页技术报告，包含 5 个耦合模型；获 2025 年亚太杯二等奖（前 8%）。</li>
-        </ul></details></div></article></div></section>
+        </ul></details></div></article><article class="project-card thesis-card" id="thesis-project">
+  <img class="project-image" src="assets/inventory-zh.svg" data-image-en="assets/inventory.svg" data-image-zh="assets/inventory-zh.svg" alt="" width="900" height="560" loading="lazy">
+  <div class="card-body">
+    <div class="card-meta"><span data-i18n="thesisCategory">毕业设计</span><span class="plan-label" data-i18n="thesisStatus">研究计划</span></div>
+    <h3 data-i18n="thesisTitle">毕设——需求不确定环境下基于多臂老虎机的动态库存决策研究</h3>
+    <p class="card-summary" data-i18n="thesisDescription">研究需求不确定环境下的序贯库存决策问题，尝试结合多臂老虎机、贝叶斯学习与随机优化，在持续获取需求信息的同时动态调整订货策略，并比较其与传统静态或短视库存策略的表现。</p>
+    <div class="card-tags"><span class="tag" data-i18n="thesisTagBandits">多臂老虎机</span><span class="tag" data-i18n="thesisTagBayes">贝叶斯学习</span><span class="tag" data-i18n="thesisTagOptimization">随机优化</span></div>
+  </div>
+</article></div></section>
 <section class="publications" id="publications"><div class="section-heading"><div><p class="eyebrow" data-i18n="text57">研究成果 / 02</p><h2 data-i18n="text58">论文与预印本</h2></div><p class="section-note" data-i18n="text59">聚焦酶预测与蛋白质功能注释。</p></div><article class="publication"><span class="pub-number">01</span><div class="pub-content" data-i18n="text60">
           Duan, H.<sup>†</sup>, Han, X.<sup>†</sup>, <strong>Mo, Y.</strong><sup>†</sup>, Hou, S., Ren, B., &amp; Xia, L. C. (2026).
           <em>sxLaep: A Lightweight and Accurate Enzyme Predictor for High-throughput Mining of Metagenomic Sequences.</em>

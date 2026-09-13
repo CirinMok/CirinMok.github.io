@@ -367,6 +367,38 @@ const translations = {
   "text95": {
     "en": "Back to top",
     "zh": "返回顶部"
+  },
+  "mcmOutlook": {
+    "zh": "相关成果预期转化为一篇 EI 论文。",
+    "en": "The related work is expected to be developed into a paper for an EI-indexed venue."
+  },
+  "thesisCategory": {
+    "zh": "毕业设计",
+    "en": "Undergraduate thesis"
+  },
+  "thesisStatus": {
+    "zh": "研究计划",
+    "en": "Planned research"
+  },
+  "thesisTitle": {
+    "zh": "毕设——需求不确定环境下基于多臂老虎机的动态库存决策研究",
+    "en": "Undergraduate Thesis — Multi-Armed Bandit-Based Dynamic Inventory Decisions under Demand Uncertainty"
+  },
+  "thesisDescription": {
+    "zh": "研究需求不确定环境下的序贯库存决策问题，尝试结合多臂老虎机、贝叶斯学习与随机优化，在持续获取需求信息的同时动态调整订货策略，并比较其与传统静态或短视库存策略的表现。",
+    "en": "This planned study examines sequential inventory decisions under demand uncertainty. It aims to combine multi-armed bandits, Bayesian learning, and stochastic optimization to adjust ordering policies dynamically as demand information is gathered, and compare their performance with traditional static or myopic inventory policies."
+  },
+  "thesisTagBandits": {
+    "zh": "多臂老虎机",
+    "en": "Multi-armed bandits"
+  },
+  "thesisTagBayes": {
+    "zh": "贝叶斯学习",
+    "en": "Bayesian learning"
+  },
+  "thesisTagOptimization": {
+    "zh": "随机优化",
+    "en": "Stochastic optimization"
   }
 };
 const languageControls = document.querySelector('.language-switch');
