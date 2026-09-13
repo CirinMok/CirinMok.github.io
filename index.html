@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yijun Mo | Academic Portfolio</title>
+  <meta name="description" content="Yijun Mo, Industrial Engineering undergraduate at South China University of Technology. Research and projects in enzyme prediction, reproducible scientific software, and operations research." />
   <style>
     :root {
       --ink: #111;
@@ -128,6 +129,12 @@
 
     li { margin: 7px 0; }
 
+    a { color: var(--ink); overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+    .top > *, .two-col > * { min-width: 0; }
+    .skip-link { position: absolute; left: -9999px; }
+    .skip-link:focus { left: 18px; top: 12px; background: var(--paper); padding: 8px; }
+
     .small {
       color: var(--muted);
       font-size: 13.5px;
@@ -164,8 +171,8 @@
   </style>
 </head>
 <body>
-  <a href="#content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
-    跳到内容
+  <a class="skip-link" href="#content">
+    Skip to content
   </a>
 
   <main class="wrap" id="content">
@@ -173,10 +180,9 @@
       <div>
         <h1 class="name">Yijun Mo</h1>
         <p class="tagline">
-          Undergraduate researcher--engineer in data engineering &amp; operations research; builds scalable
-          learning pipelines and optimization models for high-throughput scientific and economic systems.
-          Interests: data pipeline design, large-scale feature engineering, optimization under structural
-          constraints, reproducible computational modeling.
+          Industrial Engineering undergraduate at South China University of Technology, with a minor in
+          Computer Science. My work spans enzyme prediction, scientific software engineering and
+          benchmarking, and operations research, with an emphasis on reproducible computational workflows.
         </p>
         <nav aria-label="Sections">
           <a href="#education">Education</a>
@@ -190,7 +196,7 @@
 
       <div class="meta">
         <div>
-          <a href="mailto:Myj_ie@outlook.com">Myj_ie@outlook.com</a>
+          <a href="mailto:cirinmok@gmail.com">cirinmok@gmail.com</a>
         </div>
         <div>
           <a href="tel:+8618177273657">+86 181-7727-3657</a>
@@ -212,7 +218,8 @@
         <div class="right">Sep 2023 -- Present | Expected Jun 2027</div>
       </div>
       <ul>
-        <li>GPA: 3.44/4.00; Major Rank: 5/12; Core-course weighted average: 83.97/100.</li>
+        <li>GPA: 3.50/4.00; Major Rank: 4/12; Required-course weighted average: 85.70/100.</li>
+        <li>Qualified for recommendation-based postgraduate admission without the national entrance examination.</li>
         <li>English Proficiency: IELTS Overall 6.5 (L 6.0, R 8.0, W 5.5, S 5.5).</li>
         <li>Core coursework (IE): Operations Research, Database Theory &amp; Application, Managerial Statistics.</li>
         <li>Core coursework (CS Minor): Data Structures, Discrete Mathematics, Data Warehouse &amp; Data Mining.</li>
@@ -226,7 +233,7 @@
           <dt>Languages</dt>
           <dd>Python, SQL, C++.</dd>
           <dt style="margin-top:10px;">Libraries</dt>
-          <dd>pandas, scikit-learn, XGBoost, OR-Tools, joblib.</dd>
+          <dd>pandas, scikit-learn, XGBoost, OR-Tools.</dd>
         </dl>
         <dl>
           <dt>Tools</dt>
@@ -245,25 +252,28 @@
       <h2>Publications &amp; Preprints</h2>
       <ul>
         <li>
-          Duan, H.<sup>*</sup>, Mo, Y.<sup>*</sup>, &amp; Xia, L. C. (2026).
-          <em>RAEP: A Rapid and Accurate Enzyme Predictor for High-Throughput Mining of Enzymatic Sequences</em>.
-          Under review at <em>Bioinformatics</em> (5-yr IF: 7.1; JCR Q1; CAS Tier 3) (<sup>*</sup> equal contribution).
+          Duan, H.<sup>†</sup>, Han, X.<sup>†</sup>, <strong>Mo, Y.</strong><sup>†</sup>, Hou, S., Ren, B., &amp; Xia, L. C. (2026).
+          <em>sxLaep: A Lightweight and Accurate Enzyme Predictor for High-throughput Mining of Metagenomic Sequences</em>.
+          Preprint available on bioRxiv:
+          <a href="https://doi.org/10.64898/2026.05.06.723393" target="_blank" rel="noopener noreferrer">10.64898/2026.05.06.723393</a>.
+          Manuscript completed; submission planned to <em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em> (CCF-B).
         </li>
         <li>
-          Guo, J., Mo, Y., &amp; Xiao, H. (2026).
-          <em>Integrated Logistics Framework for Moon Colony Space Elevator: Hybrid Transportation Strategy Optimization</em>.
-          Manuscript in preparation.
+          Duan, H., <strong>Mo, Y.</strong>, Li, J., Li, Z., &amp; Liu, X. (2026).
+          <em>ECMamba: Reliability-Aware Fusion of Protein Language Priors and Aligned Evolutionary Evidence for Enzyme Function Annotation</em>.
+          Submitted to <em>IEEE Transactions on Neural Networks and Learning Systems</em> (CCF-B).
         </li>
       </ul>
-      <p class="small">* The symbols <sup>*</sup> indicate equal contribution.</p>
+      <p class="small"><sup>†</sup> Equal contribution (co-first authors).</p>
     </section>
 
     <section id="awards">
       <h2>Selected Awards &amp; Honours</h2>
       <ul>
-        <li>Asia-Pacific Mathematical Contest in Modeling: Second Prize (2025).</li>
-        <li>ESport Future Competition: Third Prize (Team Member, 2024).</li>
+        <li>Mathematical Contest in Modeling (MCM): Honorable Mention (2026).</li>
+        <li>Asia-Pacific Mathematical Contest in Modeling (APMCM): Second Prize (2025).</li>
         <li>School of Business Administration: Academic Scholarship (2025).</li>
+        <li>Selected for the HKUST School of Engineering Summer Camp for Elite Students 2026.</li>
       </ul>
     </section>
 
@@ -272,38 +282,42 @@
 
       <div style="margin-top: 10px;">
         <div class="subhead">
-          RAEP Library — Rapid Enzyme/Non-Enzyme Prediction Toolkit
+          sxLaep Library — Rapid Enzyme/Non-Enzyme Prediction Toolkit
         </div>
         <div class="row">
-          <div class="small">Core Developer</div>
+          <div class="small">Co-first Author · Software Engineering &amp; Benchmarking</div>
           <div class="right small">2025 -- Present</div>
         </div>
         <ul>
-          <li>Built a supervised learning pipeline (scikit-learn/XGBoost) for high-throughput enzymatic sequence classification,
-            achieving 99.49% accuracy on benchmark (new-392 test set); fastest inference speed among comparable tools.</li>
-          <li>Engineered feature extraction modules (joblib/pandas) to support training on 500k+ protein sequences;
-            reduced per-sequence inference time to &lt;50ms via vectorization + joblib parallelization.</li>
+          <li>Contributed to a high-throughput enzyme/non-enzyme classification pipeline based on scikit-learn/XGBoost,
+            supporting model inference and result validation. The project achieved 99.49% accuracy on the new-392 test set.</li>
+          <li>Primarily responsible for software engineering and benchmarking, including PyPI packaging and release,
+            Docker environment configuration, reproducible usage documentation, and evaluation of runtime,
+            peak memory usage, and classification performance across tools.</li>
           <li>Status: v1.0.0 released on
-            <a href="https://github.com/labxscut/RAEP" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">GitHub</a>
+            <a href="https://github.com/labxscut/sxLaep" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">GitHub</a>
             &amp;
-            <a href="https://pypi.org/project/raep/" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">PyPI</a>;
-            manuscript under review at <em>Bioinformatics</em> (co-first author).</li>
+            <a href="https://pypi.org/project/sxlaep/" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">PyPI</a>.
+            A <a href="https://doi.org/10.64898/2026.05.06.723393" target="_blank" rel="noopener noreferrer">bioRxiv preprint</a>
+            is available; manuscript completed, with submission planned to
+            <em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em> (TCBB).</li>
         </ul>
       </div>
 
       <div style="margin-top: 26px;">
         <div class="subhead">
-          2026 MCM/ICM — Hybrid Logistics Framework for Moon Colony Space Elevator
+          2026 MCM — Hybrid Logistics Framework for Moon Colony Space Elevator
         </div>
         <div class="row">
-          <div class="small">Team member</div>
+          <div class="small">Team Member</div>
           <div class="right small">Feb 2026</div>
         </div>
         <ul>
-          <li>Formulated a multi-objective optimization model to compare pure rocket, pure elevator, and hybrid transport strategies for lunar infrastructure delivery.</li>
-          <li>Applied Queuing Theory to quantify system stability: modeled rocket fleet with server vacations and elevator with redundancy; Monte Carlo simulation showed significantly lower variance for hybrid strategy.</li>
-          <li>Integrated Inventory Theory (EOQ + Safety Stock) for water resource planning: calculated risk-adjusted safety stock based on supply chain stability analysis, reducing holding costs compared to pure rocket strategy.</li>
-          <li>Deliver a 32-page technical report with coupled differential equations and stochastic simulations; Final Result Pending.</li>
+          <li>Contributed to queueing and stochastic logistics models for lunar colony supply transport,
+            examining system performance under capacity disruptions, transport reliability, and inventory constraints.</li>
+          <li>Conducted literature reviews, designed the reliability module, checked model consistency,
+            and co-wrote the queueing analysis section.</li>
+          <li>Contributed to a 32-page technical report in English; awarded Honorable Mention in the 2026 Mathematical Contest in Modeling.</li>
         </ul>
       </div>
 
@@ -317,8 +331,8 @@
         </div>
         <ul>
           <li>Designed an integrated modeling framework combining Grey Relational Analysis, Armington Substitution Model, and Multi-Objective Optimization to quantify trade diversion, supply chain relocation, and fiscal revenue dynamics under tariff shocks.</li>
-          <li>Formulated a cost-minimization LP model (Python/OR-Tools) to identify the &ldquo;Break-even Tariff Rate&rdquo; for automotive near-shoring; revealed a non-linear &ldquo;Capacity Wall&rdquo; in semiconductor reshoring.</li>
-          <li>Developed a counterfactual forecasting pipeline (Holt-Winters + dynamic decay factor) to expose the &ldquo;Revenue Illusion&rdquo; phenomenon; validated policy trade-offs via Entropy-Weighted TOPSIS (J-curve effect).</li>
+          <li>Built a cost-minimization linear programming model (Python/OR-Tools) to simulate tariff-driven automotive nearshoring under capacity constraints.</li>
+          <li>Used U.S. customs trade time-series data to forecast fiscal revenue over short, medium, and long horizons following tariff policy changes, identifying a revenue illusion: short-term gains followed by medium- and long-term declines.</li>
           <li>Led a 3-member team to deliver a 31-page technical report with 5 interconnected models; ranked top 8% (Second Prize, 2025).</li>
         </ul>
       </div>
@@ -333,7 +347,7 @@
       </div>
       <ul>
         <li>Analyzed multi-dimensional revenue data across charging, battery swapping, and backup power services for both B2C and B2B segments in the new energy business; built time-series forecasts for regional KPI allocation.</li>
-        <li>Provide reporting with Python/SQL.</li>
+        <li>Performed data cleaning, analysis, and report generation using Python/SQL.</li>
       </ul>
     </section>
 
